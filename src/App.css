@@ -469,14 +469,14 @@
   color: black;
 }
 
-.social__links_container button{
+.social__links_container button {
   background-color: black;
-  /* color: white; */
   height: 25px;
   width: 25px;
   border-radius: 50%;
   cursor: pointer;
   border: none;
+  margin-right: 8px; /* Add some space between each social link */
 }
 
 .social__links_container button i {
@@ -521,5 +521,11 @@
 @media only screen and (max-width: 280px) {
   .navigation_container {
       grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social__links_container button {
+    margin-right: 2px; 
   }
 }
