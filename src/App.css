@@ -529,3 +529,15 @@
     margin-right: 2px; 
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .section1__buttonContainer {
+    flex-direction: row; /* Stack buttons vertically on small screens */
+  }
+
+  /* Adjust margin for the specific buttons (India and English) */
+  .section1__buttonContainer button:nth-child(1),
+  .section1__buttonContainer button:nth-child(2) {
+    margin-top: 12px; /* Add your desired margin */
+  }
+}
